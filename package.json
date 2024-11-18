@@ -1,5 +1,5 @@
 {
-  "homepage": "",
+  "homepage": "https://skijox.github.io/TL",
   "name": "3dfolio",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,7 +16,6 @@
     "@react-three/drei": "^9.56.24",
     "@react-three/fiber": "^8.11.1",
     "framer-motion": "^9.0.7",
-    "gh-pages": "^5.0.0",
     "maath": "^0.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
