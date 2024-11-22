@@ -18,6 +18,7 @@ const App = () => {
     <Router>
       <div className="relative z-0 bg-primary">
         <Routes>
+          {/* Main route */}
           <Route
             path="/"
             element={
@@ -40,7 +41,7 @@ const App = () => {
             }
           />
 
-          {/* Blog route for a separate page */}
+          {/* Blog route */}
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
