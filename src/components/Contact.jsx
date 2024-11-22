@@ -7,6 +7,10 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// template_8i4a4zd
+// service_x2nj1ia
+// TrPHOmC4kiYFILW_A
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,6 +20,7 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
     const { target } = e;
@@ -33,27 +38,27 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_x2nj1ia',
+        'template_8i4a4zd',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Taha",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "lamine.taha@ensam-casa.ma",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'TrPHOmC4kiYFILW_A'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          setSuccessMessage("Email sent successfully!");
           setForm({
             name: "",
             email: "",
             message: "",
           });
+          setTimeout(() => setSuccessMessage(""), 3000);
         },
         (error) => {
           setLoading(false);
@@ -119,7 +124,16 @@ const Contact = () => {
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
-          </button>
+          </button>  
+          {successMessage && (
+          <span style={{ marginLeft: "15px", color: "green" }}>
+            <b> {successMessage} </b> <br/> 
+            <span style={{ fontSize: "15px", color: "white", opacity:"80" }}>I will get back to you as soon as possible. </span>
+          </span>
+        )}
+    
+    
+    
         </form>
       </motion.div>
 

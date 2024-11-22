@@ -11,7 +11,7 @@ import myPicture2 from "../assets/TahaAR.png";
 
 const About = () => {
   return (
-    <div className="grid lg:grid-cols-2 gap-10 items-start lg:items-center">
+    <div className="grid lg:grid-cols-2 gap-10 items-start lg:items-center" id="about">
     {/* Left side: text content */}
     <>
     <div className="col-span-2 lg:col-span-1">

@@ -98,12 +98,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.yellow-text-gradient {
-  background: linear-gradient(90deg, #FFD700, #FFA500); /* Customize the shades of yellow and orange */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .pink-text-gradient {
   background: #ec008c; /* fallback for old browsers */
   background: -webkit-linear-gradient(

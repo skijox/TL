@@ -66,7 +66,7 @@ export const navLinks = [
   {
     id: "blog",
     title: "Blog",
-    link: "http://tahalamine.com/blog",
+    link: "/blog",
   },
   {
     id: "projects",
