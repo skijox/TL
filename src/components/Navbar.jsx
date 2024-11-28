@@ -98,10 +98,13 @@ const Navbar = () => {
                       window.open(nav.link, "_blank");
                     } else {
                       setActive(nav.title);
+                      if (nav.link) {
+                        window.location.hash = nav.link; // Use hash-based navigation
+                      }
                     }
                   }}
                 >
-                  <Link to={nav.link || "#"}>{nav.title}</Link>
+                  <Link to={nav.link}>{nav.title}</Link>
                 </li>
               ))}
             </ul>
