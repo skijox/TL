@@ -15,13 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  unity,
+  csharp,
+  angular,
+  pythonlogo,
+  blender,
   threejs,
   research, 
   python,
@@ -37,6 +35,7 @@ import {
   socialgame,
   socialgamepic,
   avatarepic,
+  avatar,
   ARforRealEstate,
 
 } from "../assets";
@@ -99,6 +98,31 @@ const services = [
 
 const technologies = [
   {
+    name: "Unity",
+    icon: unity,
+  },
+  {
+    name: "blender",
+    icon: blender,
+  },
+  {
+    name: "csharp",
+    icon: csharp,
+  },
+  {
+    name: "python",
+    icon: pythonlogo,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+
+  {
+    name: "Angular JS",
+    icon: angular,
+  },
+  {
     name: "HTML 5",
     icon: html,
   },
@@ -114,26 +138,7 @@ const technologies = [
     name: "TypeScript",
     icon: typescript,
   },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+
   {
     name: "Three JS",
     icon: threejs,
@@ -146,10 +151,7 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
 ];
 
 const experiences = [
@@ -378,7 +380,7 @@ const projects = [
     ],
     image: avatarepic,
     source_code_link: "https://github.com/",
-    video_link: "../assets/videos/Trust_AV_Demo.mp4",
+    video_link: avatar,
   },
 ];
 

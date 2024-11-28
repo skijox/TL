@@ -20,6 +20,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import unity from "./tech/Frameworks/unity.png";
+import blender from "./tech/Frameworks/blender.png";
+import csharp from "./tech/Frameworks/c-sharp.png";
+import pythonlogo from "./tech/Frameworks/python.png";
+import angular from "./tech/Frameworks/Angular.png";
+
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -45,6 +53,7 @@ import trustinavpic from "./videos/Trust_in_AV.png";
 import socialgame from "./videos/SocialGame.mp4";
 import socialgamepic from "./videos/SocialGame.png";
 import avatarepic from "./videos/avatar.png";
+import avatar from "./videos/avatar.mp4";
 
 import pexel from "./blogs/pexel.jpg";
 import ARforRealEstate from "./blogs/AR-for-Real-estate.jpg";
@@ -95,6 +104,11 @@ export {
   socialgame,
   socialgamepic,
   avatarepic,
+  avatar,
   ARforRealEstate,
-
+  unity,
+  blender,
+  csharp,
+  angular,
+  pythonlogo,
 };

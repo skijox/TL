@@ -157,7 +157,7 @@ const Blog = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <h1 className="text-white text-5xl md:text-7xl font-bold">Welcome to My Blog</h1>
+          <h1 className="text-white text-5xl md:text-7xl font-bold">Did you know... 7yd tswira w dir margin top</h1>
         </div>
       </div>
 

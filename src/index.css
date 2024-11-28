@@ -97,6 +97,21 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.yellow-text-gradient {
+  background: #f5d300; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #f5d300,
+    #ffea61
+  );
+  background: linear-gradient(
+    to top,
+    #f5d300,
+    #ffea61
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .pink-text-gradient {
   background: #ec008c; /* fallback for old browsers */
