@@ -9,6 +9,10 @@ export default defineConfig({
     outDir: 'dist', 
     chunkSizeWarningLimit: 1500,  // Optional, increase chunk size if necessary
     rollupOptions: {
+      input: {
+        main: './index.html',
+        blog: './blog.html', 
+      },
       output: {
         manualChunks: {
           react: ['react', 'react-dom', 'react-router-dom'],  // Split React libraries

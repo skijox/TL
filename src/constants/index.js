@@ -64,8 +64,8 @@ export const navLinks = [
   },
   {
     id: "blog",
-    title: "Blogg",
-    link: "#/blog",
+    title: "Blog",
+    link: "/blog",
   },
   {
     id: "projects",
@@ -393,20 +393,24 @@ const certificates = [
       " Unity Technologies", 
     tags: [
       {
-        name: "test",
+        name: "UnityProgramming",
         color: "blue-text-gradient",
       },
       {
-        name: "test",
+        name: "GameDev",
         color: "green-text-gradient",
       },
       {
-        name: "test ",
+        name: "C-sharp",
         color: "pink-text-gradient",
       },
       {
-        name: "test",
+        name: "ProblemSolving",
         color: "yellow-text-gradient",
+      },
+      {
+        name: "InteractiveDesign",
+        color: "blue-text-gradient",
       },
     ],
     image: unityjunior,
@@ -418,20 +422,28 @@ const certificates = [
       " Unity Technologies", 
     tags: [
       {
-        name: "test",
+        name: "Rendering",
         color: "blue-text-gradient",
       },
       {
-        name: "test",
+        name: "Lighting",
         color: "green-text-gradient",
       },
       {
-        name: "test",
+        name: "GameDesign",
         color: "pink-text-gradient",
       },
       {
-        name: "test",
+        name: "CrossPlatformDev",
         color: "yellow-text-gradient",
+      },
+      {
+        name: "AR",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "VR",
+        color: "green-text-gradient",
       },
     ],
     image: unityessentials,
