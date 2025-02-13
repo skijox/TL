@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import Pepper from "../assets/pepper.jpg"; 
+import arrow from "../assets/arrow.png"; 
+import { Tilt } from "react-tilt";
+
 
 const Hero = () => {
   return (
@@ -21,13 +24,50 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Computer Science & AI Engineer <br className='sm:block hidden' />
             XR Developer<br className='sm:block hidden' />
-            PhD Candidate
+            PhD in Cross-Reality in Robotics using VR/AR
            
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+       {/* Container for ComputersCanvas and Image */}
+      <div className="absolute inset-0 top-[120px] max-w-7xl mx-auto flex justify-between items-center">
+        <div className="w-[100%] h-full">
+          <ComputersCanvas />
+        </div>
+  
+        <Tilt
+                options={{
+                  max: 45,
+                  scale: 1,
+                  speed: 450,
+                }}
+                className=' p-5 rounded-2xl sm:w-[400px] w-full'
+              >
+        <motion.div
+                initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
+                animate={{ opacity: 1, x: 0 }}  // Animate to on-screen
+                transition={{ duration: 0.8, ease: "easeOut" }} // Customize duration and easing
+              >
+                 
+                <img
+            src={arrow}
+            alt="Taha"
+            className="w-full h-auto max-w-[400px] object-cover rounded-lg shadow-lg"
+          />
+        <div className=" flex justify-center">
+          <img
+            src={Pepper}
+            alt="Taha"
+            className="w-full h-auto max-w-[400px] object-cover rounded-lg shadow-lg "
+          />
+        </div>
+       
+        
+        
+        </motion.div>  </Tilt>
+      </div>
+
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

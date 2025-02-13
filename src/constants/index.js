@@ -38,7 +38,7 @@ import {
   socialgamepic,
   avatarepic,
   ARforRealEstate,
-
+  enib,
 } from "../assets";
 import Crossing from "../assets/company/CrossingL.png";
 import Mercure from "../assets/company/Mercure.jpeg";
@@ -63,15 +63,7 @@ export const navLinks = [
     id: "education",
     title: "Education",
   },
-  {
-    id: "blog",
-    title: "Blog",
-    link: "http://localhost:5173/blog",
-  },
-  {
-    id: "testimonials",
-    title: "Testimonials",
-  },
+
   {
     id: "projects",
     title: "Projects",
@@ -158,8 +150,22 @@ const technologies = [
 
 const experiences = [
   {
-    title: "VR & AR Researcher and Developer",
-    company_name: "IRL CROSSING",
+    title : "Doctor of Philosophy - PhD",
+    company_name: [
+      "Brest National School of Engineering - France",
+      "University of South Australia - Australia"
+    ],
+    icon : enib, 
+    iconBg:"#FFFFFF",
+    date:"January 2025 - Present",
+    points:[
+      "I am currently pursuing a PhD in Cross-reality in interactive robotic where I am investigating the Human-Robot Interaction using VR/AR. ",
+
+    ],
+  },
+  {
+    title: "VR & AR Researcher and Developer Intern",
+    company_name: "IRL CROSSING - Australia",
     icon: Crossing,
     iconBg: "#383E56",
     date: "March 2024 - September 2024",
@@ -175,7 +181,7 @@ const experiences = [
   },
   {
     title: "AI & VR Developer Intern",
-    company_name: "The UM6P Vanguard Center",
+    company_name: "The UM6P Vanguard Center - Morocco",
     icon: Um6p,
     iconBg: "#E6DEDD",
     date: "July 2023 - September 2023",
@@ -186,7 +192,7 @@ const experiences = [
   },
   {
     title: "Full-Stack Developer Intern",
-    company_name: "Mercure IT",
+    company_name: "Mercure IT - Morocco",
     icon: Mercure,
     iconBg: "#383E56",
     date: "June 2022 - August 2022",
@@ -199,6 +205,16 @@ const experiences = [
 ];
 
 const educations = [
+  {
+    title: "Doctor of Philosophy - PhD, Computer Science, Robotics and XR. ",
+    company_name: "— Brest National School of Engineering (ENIB) ",
+    icon: enib,
+    iconBg: "#FFFFFF",
+    date: "January 2025 - Present",
+    points: [
+
+    ],
+  },
   {
     title: "Computer Science and Artificial Intelligence Engineer",
     company_name: "— University Hassan II (ENSAM) Casablanca",

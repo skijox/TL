@@ -35,12 +35,16 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
+
+        <div className='text-secondary text-[14px] space-y-0' style={{ margin: 10 }}>
+          {Array.isArray(experience.company_name) ? (
+            experience.company_name.map((company, index) => (
+              <p key={index}>{company}</p>
+            ))
+          ) : (
+            <p>{experience.company_name}</p>
+          )}
+          </div>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>

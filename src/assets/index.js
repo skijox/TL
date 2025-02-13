@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import enib from "./enib.png";
+import arrow from "./arrow.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -45,6 +47,7 @@ import trustinavpic from "./videos/Trust_in_AV.png";
 import socialgame from "./videos/SocialGame.mp4";
 import socialgamepic from "./videos/SocialGame.png";
 import avatarepic from "./videos/avatar.png";
+
 
 import pexel from "./blogs/pexel.jpg";
 import ARforRealEstate from "./blogs/AR-for-Real-estate.jpg";
@@ -96,5 +99,6 @@ export {
   socialgamepic,
   avatarepic,
   ARforRealEstate,
-
+  enib,
+  arrow,
 };

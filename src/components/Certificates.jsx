@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import Tilt from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { github } from "../assets";
 import { eyes } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { certificates } from "../constants";
@@ -16,7 +14,7 @@ const CertificatesCard = ({
   tags,
   image,
   openModal, 
-  source_code_link,
+
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -56,15 +54,15 @@ const CertificatesCard = ({
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
+  {tags.map((tag, tagIndex) => (
+    <p
+      key={`${index}-${tagIndex}`} // Unique key using both certificate index and tag index
+      className={`text-[14px] ${tag.color}`}
+    >
+      #{tag.name}
+    </p>
+  ))}
+</div>
       </Tilt>
     </motion.div>
   );
